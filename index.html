@@ -15,15 +15,26 @@
 </head>
 
 <body>
-
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header"><span class="avatar"><img src="images/avatar.jpg" alt="" width="173" height="178"></span>
-			<h1>This is <strong>Visualize</strong>, a responsive site template designed by <a
-					href="http://templated.co">TEMPLATED</a><br>
-				and released for free under the Creative Commons License.</h1>
+		<header id="header">
+			<nav id="navbar">
+				<div id="site-logo">
+					<span style="font-size: xx-large"><a href="/">Ashley's Site</a></span>
+				</div>
+				<div id="navlinks">
+					<a href="#">Module 3</a>
+				</div>
+			</nav>
+			
+			<span class="avatar"><img src="images/avatar.jpg" alt="" width="173" height="178"></span>
+
+			<script language="javascript">
+				document.writeln("<h1>Welcome to <strong>Ashley's</strong> website!</h1>");
+			</script>
+
 			<ul class="icons">
 				<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
@@ -31,8 +42,12 @@
 				<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
 				<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 			</ul>
-		</header><!-- Main -->
-		<section id="main"><!-- Thumbnails -->
+		</header>
+		
+		<!-- Main -->
+		<section id="main">
+			
+			<!-- Thumbnails -->
 			<section class="thumbnails">
 				<div>
 					<a href="images/fulls/01.jpg">
@@ -69,8 +84,10 @@
 					</a>
 				</div>
 			</section>
-		</section><!-- Footer -->
+		</section>
 	</div>
+
+	<!-- Footer -->
 	<div class="copyright">
 		Made with: <a href="https://templated.co/">Templated.co</a>
 	</div>
