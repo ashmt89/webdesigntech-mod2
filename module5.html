@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ashley's Website - Module 5</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script>
+        function validateForm() {
+            var fName = document.forms["myForm"]["fname"].value;
+            var lName = document.forms["myForm"]["lname"].value;
+            var phone = document.forms["myForm"]["phone"].value;
+            var email = document.forms["myForm"]["email"].value
+            var msg = document.forms["myForm"]["message"].value;
+
+            if (fName == "") {
+                alert("Please enter your first name");
+                return false;
+            }
+            if (lName == "") {
+                alert("Please enter your last name");
+                return false;
+            }
+            if (!validatePhone(phone)) {
+                alert("Please enter a valid phone number");
+                return false;
+            }
+            if (email == "") {
+                alert("Please enter your email address");
+                return false;
+            }
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            if (msg == "") {
+                alert("Please enter a message");
+                return false;
+            }
+
+            alert("Thank you, your form has been submitted!");
+            return true;
+        }
+
+        function validatePhone(phone) {
+            // Regular expression to validate phone number format   
+            var re = /^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$/;
+
+            // Check if the phone number matches the regular expression
+            return re.test(phone);
+        }
+
+        function validateEmail(email) {
+            // Regular expression to validate email address format
+            var re = /\S+@\S+\.\S+/;
+
+            // Check if the email address matches the regular expression
+            return re.test(email);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Nav Bar-->
+        <nav id="navbar">
+            <div id="site-logo">
+                <span style="font-size: xx-large"><a href="index.html">Ashley's Site</a></span>
+            </div>
+            <div id="navlinks">
+                <a href="index.html">Home</a>
+                <a href="module3.html">Module 3</a>
+                <a href="module4.html">Module 4</a>
+                <a href="module5.html">Module 5</a>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header id="header">
+
+            <center>
+                <h1>Module 5:
+                <br> My JS Form & Wireframe Design</h1>
+            </center>
+        </header>
+
+        <!-- Main -->
+        <section id="main">
+
+            <center>
+                <h2>Contact Form</h2>
+                <form name="myForm" action="module5.html" onsubmit="return validateForm()" method="post">
+                    <div style="display: flex; gap: 10px;">
+                        <div style="width: 50%;"><input type="text" placeholder="First Name*" name="fname"></div>
+                        <div style="width: 50%;"><input type="text" placeholder="Last Name*" name="lname"></div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <div style="width: 50%;"><input type="tel" placeholder="Phone*" name="phone"></div>
+                        <div style="width: 50%;"><input type="text" placeholder="Email*" name="email"></div>
+                    </div>
+                    <input type="text" placeholder="Subject (Optional)">
+                    <textarea id="textarea" placeholder="Message*" name="message" rows="10" cols="50"></textarea>
+                    <div style="display: flex; gap: 10px; width: full;">
+                        <div style="width: 50%; padding-top: 10px;">
+                            Preferred Contact Method (Optional)
+                        </div>
+                        <div style="width: 50%; padding: 10px 0 5px 0;">
+                            <input type="radio" id="phone2" name="pref_contact"><label for="phone2">Phone</label>
+                            <input type="radio" id="email2" name="pref_contact"><label for="email2">Email</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <br><br>
+                
+                <h2>Wireframe Design</h2>
+                <img src="images/PoshPawsWF.png" width="1000px"></img>
+
+            </center>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="copyright">
+        © 2024 Ashley Graham | Made with: <a href="https://templated.co/">Templated.co</a>
+    </div>
+
+</body>
+
+</html>
