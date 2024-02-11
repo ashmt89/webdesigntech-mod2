@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -24,8 +24,12 @@
                 alert("Please enter your last name");
                 return false;
             }
+            if (phone == "") {
+                alert("Please enter your phone number");
+                return false;
+            }
             if (!validatePhone(phone)) {
-                alert("Please enter a valid phone number");
+                alert("Please enter a valid phone number (i.e. 123-456-7890)");
                 return false;
             }
             if (email == "") {
@@ -33,7 +37,7 @@
                 return false;
             }
             if (!validateEmail(email)) {
-                alert("Please enter a valid email address");
+                alert("Please enter a valid email address (i.e. youremail@website.com)");
                 return false;
             }
             if (msg == "") {
