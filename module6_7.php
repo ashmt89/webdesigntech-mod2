@@ -71,9 +71,9 @@
                 $average = calculateAverage($grades);
 
                 // Print list of grades
-                echo "All grades:\n";
+                echo "All grades:" . "br";
                 foreach ($grades as $grade) {
-                    echo $grade . "\n";
+                    echo $grade . "br";
                 }
                 
                 // Print average grade above or equal to 60
