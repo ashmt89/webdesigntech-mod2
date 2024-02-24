@@ -33,7 +33,7 @@
                     <h1>Module 6 & 7</h1>
 
                     <?php
-                    echo "Hi, I'm a PHP script!";
+                    echo "Hi, I'm a PHP script! Here is a list of grades along with the average passing grade.";
                     ?>
                 </center>
             </header>
@@ -71,9 +71,9 @@
                 $average = calculateAverage($grades);
 
                 // Print list of grades
-                echo "All grades:" . "br";
+                echo "All grades: <br>";
                 foreach ($grades as $grade) {
-                    echo $grade . "br";
+                    echo $grade . "<br>";
                 }
                 
                 // Print average grade above or equal to 60
