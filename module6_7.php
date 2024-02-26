@@ -31,10 +31,6 @@
             <header id="header">
                 <center>
                     <h1>Module 6 & 7</h1>
-
-                    <?php
-                    echo "Hi, I'm a PHP script! Here is a list of grades along with the average passing grade.";
-                    ?>
                 </center>
             </header>
 
@@ -42,6 +38,7 @@
             <!-- Main -->
             <section id="main">
                 <center>
+                    <h2><u>A. Function</u></h2>
 
                     <?php
                 // Function to calculate average passing grade (above or equal to 60)    
@@ -71,14 +68,25 @@
                 $average = calculateAverage($grades);
 
                 // Print list of grades
-                echo "All grades: <br>";
+                echo "<b>All grades:</b> <br>";
                 foreach ($grades as $grade) {
                     echo $grade . "<br>";
                 }
                 
                 // Print average grade above or equal to 60
-                echo "Average passing grade (above or equal to 60): $average";
-                ?>
+                echo "<b>Average passing grade (above or equal to 60):</b> $average";
+                    ?>
+
+                <h2><u>B. String</u></h2>
+
+                <?php
+                // Define variable
+                $myName = "Ashley Marie Graham";
+                
+                // Print amount of words in name and amount of characters in name
+                echo "My full name, <b>" . $myName . "</b>, consists of <b>" . str_word_count($myName) . "</b> words and <b>" . strlen($myName) . "</b> characters.";
+                    ?>
+                </center>
             </section>      
 
     <!-- Footer -->
