@@ -31,6 +31,9 @@
             <header id="header">
                 <center>
                     <h1>Module 6 & 7</h1>
+
+                    <p>Assignment A calculates the average passing grade (60 or above) from a list of 10 grades.
+                        <br>Assignment B displays the word cound and character count (including spaces) of my full name.</p>
                 </center>
             </header>
 
@@ -76,6 +79,9 @@
                 // Print average grade above or equal to 60
                 echo "<b>Average passing grade (above or equal to 60):</b> $average";
                     ?>
+
+                <br>
+                <br>   
 
                 <h2><u>B. String</u></h2>
 
