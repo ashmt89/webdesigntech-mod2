@@ -42,7 +42,6 @@
                     <h2>Thank you, <?php echo $_POST["fname"]; ?>, your submission was successful!</h2>
                     <br><br>
                     <h2>Submitted form details:</h2>
-                    <br>
                     <b>First Name:</b> <?php echo $_POST["fname"]; ?>
                     <br>
                     <b>Last Name:</b> <?php echo $_POST["lname"]; ?>
@@ -57,9 +56,9 @@
                     <br>
                     <b>Preferred Contact Method:</b> 
                     <br>
-                    Phone <?php if (isset($pref_contact) && $pref_contact=="phone2") echo $_POST["checked"]; ?>
+                    Phone <?php if (isset($pref_contact) && $pref_contact=="phone2") echo "checked"; ?>
                     <br>
-                    Email <?php if (isset($pref_contact) && $pref_contact=="email2") echo $_POST["checked"]; ?>
+                    Email <?php if (isset($pref_contact) && $pref_contact=="email2") echo "checked"; ?>
                 </center>
 
             </section>
