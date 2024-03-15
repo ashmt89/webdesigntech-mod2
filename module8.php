@@ -56,9 +56,18 @@
                     <br>
                     <b>Preferred Contact Method:</b> 
                     <br>
-                    Phone <?php if (isset($pref_contact) && $pref_contact=="phone2") echo "checked"; ?>
-                    <br>
-                    Email <?php if (isset($pref_contact) && $pref_contact=="email2") echo "checked"; ?>
+                    <?php 
+                    if (isset($_POST["pref_contact"])) {
+                        $pref_contact = $_POST["pref_contact"];
+                        if ($pref_contact == "phone") {
+                            echo "Phone";
+                        } else if ($pref_contact == "email") {
+                            echo "Email";
+                        }
+                    } else {
+                        echo "No preference specified.";
+                    }
+                    ?>
                 </center>
 
             </section>
