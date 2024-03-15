@@ -65,7 +65,7 @@
                             echo "Email";
                         }
                     } else {
-                        echo "No preference specified.";
+                        echo "No preference specified";
                     }
                     ?>
                 </center>
