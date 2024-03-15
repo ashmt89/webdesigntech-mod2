@@ -55,7 +55,6 @@
                     <b>Message:</b> <?php echo $_POST["message"]; ?>
                     <br>
                     <b>Preferred Contact Method:</b> 
-                    <br>
                     <?php 
                     if (isset($_POST["pref_contact"])) {
                         $pref_contact = $_POST["pref_contact"];
