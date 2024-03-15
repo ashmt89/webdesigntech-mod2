@@ -24,6 +24,7 @@
                 <a href="module4.html">Module 4</a>
                 <a href="module5.html">Module 5</a>
                 <a href="module6_7.php">Module 6/7</a>
+                <a href="module8.html">Module 8</a>
             </div>
         </nav>
 
