@@ -44,9 +44,6 @@
                 alert("Please enter a message");
                 return false;
             }
-
-            alert("Thank you, your form has been submitted!");
-            return true;
         }
 
         function validatePhone(phone) {
@@ -110,7 +107,7 @@
                         <div style="width: 50%;"><input type="tel" placeholder="Phone*" name="phone"></div>
                         <div style="width: 50%;"><input type="text" placeholder="Email*" name="email"></div>
                     </div>
-                    <input type="text" placeholder="Subject (Optional)">
+                    <input type="text" placeholder="Subject (Optional)" name="subject">
                     <textarea id="textarea" placeholder="Message*" name="message" rows="10" cols="50"></textarea>
                     <div style="display: flex; gap: 10px; width: full;">
                         <div style="width: 50%; padding-top: 10px;">

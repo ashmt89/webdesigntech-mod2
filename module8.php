@@ -55,7 +55,11 @@
                     <br>
                     <b>Message:</b> <?php echo $_POST["message"]; ?>
                     <br>
-                    <b>Preferred Contact Method:</b> <?php echo $_POST["pref_contact"]; ?>
+                    <b>Preferred Contact Method:</b> 
+                    <br>
+                    Phone <?php if (isset($pref_contact) && $pref_contact=="phone") echo $_POST["checked"]; ?>
+                    <br>
+                    Email <?php if (isset($pref_contact) && $pref_contact=="phone") echo $_POST["checked"]; ?>
                 </center>
 
             </section>
