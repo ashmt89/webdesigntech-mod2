@@ -36,14 +36,14 @@
             $dbname = "if0_35788056_module10";
 
             // Create connection
-            $conn = new mysqli($sql301.infinityfree.com, $if0_35788056, $R0scoestinks, $if0_35788056_module10);
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
             // Check connection
             if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "INSERT INTO 'module10' (`ID`, `FirstName`, `LastName`, `Email`) 
+            $sql = "INSERT INTO `module10` (`ID`, `FirstName`, `LastName`, `Email`) 
             VALUES (NULL, 'Marsha', 'Mellow', 'mm@gmail.com')";
 
             if ($conn->query($sql) === TRUE) {
