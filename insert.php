@@ -25,9 +25,24 @@
                 <a href="module5.html">Module 5</a>
                 <a href="module6_7.php">Module 6/7</a>
                 <a href="module8.html">Module 8</a>
-                <a href="module8.html">Module 10</a>
+                <a href="module10.html">Module 10</a>
             </div>
         </nav>
+
+            <?php
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password);
+
+            // Check connection
+            if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+            }
+            echo "Connected successfully";
+            ?>
 
             <?php
             $servername = "sql301.infinityfree.com";
@@ -37,13 +52,14 @@
 
             // Create connection
             $conn = new mysqli($sql301.infinityfree.com, $if0_35788056, $R0scoestinks, $if0_35788056_module10);
+
             // Check connection
             if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "INSERT INTO Students (FirstName, LastName, Email)
-            VALUES ('John', 'Doe', 'john@example.com')";
+            $sql = "INSERT INTO 'module10' (`ID`, `FirstName`, `LastName`, `Email`) 
+            VALUES (NULL, 'Marsha', 'Mellow', 'mm@gmail.com')";
 
             if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
